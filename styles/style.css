@@ -155,8 +155,30 @@ nav {
 
 /* Main section */
 
+/* Box section */
+
 .box-text {
     text-align: center;
+
+}
+
+.box-text-1 {
+    color: #0B0223;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.box-text-2 {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .box-container {
@@ -266,4 +288,80 @@ nav {
     font-weight: 400;
     line-height: 30px;
 
+}
+
+
+/* Footer section */
+
+.footer {
+    text-align: center;
+    background: #0B0223;
+    padding: 100px;
+
+}
+
+.footer-gamer-tag {
+    text-align: center;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+
+}
+
+.footer-1 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.footer-text-2 ul {
+    color: #FFF;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 25px;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.footer-text-3 {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-icons img {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    margin-bottom: 40px;
+
+}
+
+.footer-text ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 40px;
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 40px;
 }
