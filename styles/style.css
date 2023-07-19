@@ -1,3 +1,5 @@
+/* CSS Styles Start */
+
 * {
     margin: 0;
     padding: 0;
@@ -68,7 +70,7 @@ nav {
     font-weight: 500;
 }
 
-.div-2 ul li a{
+.div-2 ul li a {
     text-decoration: none;
 }
 
@@ -224,7 +226,7 @@ nav {
     display: flex;
     justify-content: space-between;
     gap: 25px;
-    padding: 50px 100px; 
+    padding: 50px 100px;
 }
 
 .box-container .box img {
@@ -239,7 +241,6 @@ nav {
 .box-container .box img:hover {
     border: 6px solid #F948B2;
     cursor: pointer;
-
 }
 
 .box p {
@@ -249,7 +250,6 @@ nav {
     font-weight: 500;
     line-height: 30px;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 /* Play section */
@@ -270,7 +270,7 @@ nav {
 
 .play .img-2 {
     width: 250px;
-    height: 300px;
+    height: 290px;
     flex-shrink: 0;
     border-radius: 8px;
     border: 2px solid #FFF;
@@ -427,6 +427,7 @@ nav {
     height: 35px;
     flex-shrink: 0;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 
 .footer-text ul {
@@ -442,20 +443,25 @@ nav {
     margin-bottom: 40px;
 }
 
+/* responsive media query */
+
 @media screen and (max-width: 576px) {
+
+    * {
+        max-width: 124%;
+    }
 
     /* navigation part  */
 
-    head {}
-
     nav {
         flex-direction: column;
-
+        box-shadow: none;
+        height: 200px;
+        width: 123%;
     }
 
     .nav-2 {
         flex-direction: column;
-
     }
 
     .div-2 ul {
@@ -466,28 +472,106 @@ nav {
 
     .banner {
         flex-direction: column;
-        padding: 20px;
+        background-image: none;
+        height: 990px;
+        width: 123%;
+        justify-content: center;
+    }
 
+    .banner-text {
+        padding: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .banner-title-2{
+        text-align: center;
+    }
+
+    .banner-img{
+        width: 100%;
+    }
+
+    .div-1 {
+        margin-bottom: 10px;
     }
 
     /* online games part  */
     .online-games {
         flex-direction: column;
+        width: 170%;
+
+    }
+
+    .box-text {
+        margin-left: 50px;
+        width: 120%;
     }
 
     .box-container {
         flex-direction: column;
+        width: 100%;
     }
 
-    /* play part  */
+    .box-container .box {
+        justify-content: center;
+        padding: 0 100px 0;
+        margin-left: 18px;
+    }
+
+    /* play section */
 
     .play {
         flex-direction: column;
-        padding: 5px;
-        width: 90%;
-        margin: 0 auto;
+        height: 100%;
+        width: 150%;
+        padding: 40px;
     }
 
-    /* footer part  */
+    .play-img {
+        width: 123%;
+        height: 500px;
+    }
 
-}
+    .play-text {
+        width: 100%;
+        text-align: center;
+        margin-left: 60px;
+    }
+
+    /* button section */
+
+    .button {
+        width: 123%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-evenly;
+    }
+
+    .button .hover {
+        width: 110%;
+        height: 110%;
+        padding: 5px;
+    }
+
+    /* footer section */
+
+    .footer {
+        width: 124%;
+    }
+
+    .footer-text ul {
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .footer-text-2 ul {
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50px;
+    }
+
+    /* CSS Styles End */
