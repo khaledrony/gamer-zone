@@ -4,7 +4,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.container{
+.container {
     padding: 50px 100px;
 }
 
@@ -38,6 +38,9 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 50px 100px;
+    height: 25px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 
 }
 
@@ -95,18 +98,17 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 50px 100px;
-    /* background-image: url(../images/Group\ 14.png);
-    background-repeat: no-repeat; */
+    background-image: url(../images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: 700px;
     width: 1300px;
-    height: 600px;
+    height: 440px;
     flex-shrink: 0;
     fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
 }
 
 .banner-img {
-    height: -10%;
-
-
+    height: 550px;
 }
 
 .banner-title-1 {
@@ -133,6 +135,9 @@ nav {
     -webkit-text-fill-color: transparent;
 
 }
+
+
+
 
 .banner ul {
     color: #534C64;
@@ -221,8 +226,8 @@ nav {
     justify-content: space-between;
     gap: 25px;
     padding: 50px 100px;
-    
-    
+
+
 }
 
 .box-container .box img {
@@ -233,6 +238,12 @@ nav {
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     margin-bottom: 5px;
     justify-content: space-evenly;
+}
+
+.box-container .box img:hover {
+    border: 6px solid #F948B2;
+    cursor: pointer;
+
 }
 
 .box p {
@@ -249,10 +260,8 @@ nav {
 
 .play {
     display: flex;
-    padding: 50px 100px;
-    
-
-
+    padding: 50px 100px 0px;
+    height: 650px;
 }
 
 .play .img-1 {
@@ -268,7 +277,7 @@ nav {
     height: 300px;
     flex-shrink: 0;
     border-radius: 8px;
-    border: 5px solid #FFF;
+    border: 2px solid #FFF;
     background: url(<path-to-image>), lightgray -7.209px 0px / 114.78% 100% no-repeat;
     position: relative;
     bottom: 200px;
@@ -352,6 +361,7 @@ nav {
     align-items: center;
     padding: 50px 100px;
     gap: 15px;
+
 }
 
 
@@ -393,6 +403,7 @@ nav {
 .footer-1 {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     margin-bottom: 40px;
 }
@@ -455,9 +466,7 @@ nav {
 
     /* navigation part  */
 
-    head {
-        
-    }
+    head {}
 
     nav {
         flex-direction: column;
@@ -492,7 +501,7 @@ nav {
 
     /* play part  */
 
-    .play{
+    .play {
         flex-direction: column;
         padding: 5px;
         width: 90%;
@@ -500,5 +509,5 @@ nav {
     }
 
     /* footer part  */
-    
+
 }
