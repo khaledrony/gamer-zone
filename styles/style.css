@@ -225,19 +225,21 @@ nav {
     display: flex;
     justify-content: space-between;
     gap: 25px;
-    padding: 50px 100px;
-
+    padding: 50px 100px; 
+    
 
 }
+
+
 
 .box-container .box img {
     width: 300px;
     height: 350px;
     flex-shrink: 0;
-    border-radius: 12px;
+    border-radius: 18px;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     margin-bottom: 5px;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 
 .box-container .box img:hover {
@@ -248,7 +250,7 @@ nav {
 
 .box p {
     color: #534C64;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
@@ -347,7 +349,7 @@ nav {
     width: 248px;
     height: 80px;
     flex-shrink: 0;
-    border: 1px solid #FFF;
+    border: 3px solid #FFF;
     border-radius: 50px;
     background: #FFF;
 
@@ -369,6 +371,7 @@ nav {
     border-color: #F948B2;
     color: #F948B2;
     cursor: pointer;
+
 
 }
 
