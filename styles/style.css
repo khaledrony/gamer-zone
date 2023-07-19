@@ -4,6 +4,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.container{
+    padding: 50px 100px;
+}
+
 .logo {
     width: 40px;
     height: 35px;
@@ -46,6 +50,7 @@ nav {
 .div-1,
 .div-3 {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
@@ -90,10 +95,19 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 50px 100px;
-    background-color: rgb(250, 245, 248);
+    /* background-image: url(../images/Group\ 14.png);
+    background-repeat: no-repeat; */
+    width: 1300px;
+    height: 600px;
+    flex-shrink: 0;
+    fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
 }
 
+.banner-img {
+    height: -10%;
 
+
+}
 
 .banner-title-1 {
     color: #0B0223;
@@ -180,7 +194,6 @@ nav {
 .box-text {
     text-align: center;
     margin-top: 50px;
-
 }
 
 .box-text-1 {
@@ -205,22 +218,25 @@ nav {
 
 .box-container {
     display: flex;
-    gap: 24px;
+    justify-content: space-between;
+    gap: 25px;
     padding: 50px 100px;
+    
+    
 }
 
 .box-container .box img {
     width: 300px;
     height: 350px;
     flex-shrink: 0;
-    border-radius: 16px;
+    border-radius: 12px;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     margin-bottom: 5px;
+    justify-content: space-evenly;
 }
 
 .box p {
     color: #534C64;
-    font-family: Work Sans;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -234,7 +250,7 @@ nav {
 .play {
     display: flex;
     padding: 50px 100px;
-
+    
 
 
 }
@@ -252,7 +268,7 @@ nav {
     height: 300px;
     flex-shrink: 0;
     border-radius: 8px;
-    border: 10px solid #FFF;
+    border: 5px solid #FFF;
     background: url(<path-to-image>), lightgray -7.209px 0px / 114.78% 100% no-repeat;
     position: relative;
     bottom: 200px;
@@ -305,13 +321,53 @@ nav {
 
 .play-description {
     color: #534C64;
-    font-family: Work Sans;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
     font-family: 'Open Sans', sans-serif;
 
+}
+
+/* Button section  */
+
+.button button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 248px;
+    height: 80px;
+    flex-shrink: 0;
+    border: 1px solid #FFF;
+    border-radius: 50px;
+    background: #FFF;
+
+
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    gap: 15px;
+}
+
+
+.hover:hover {
+    border-color: #F948B2;
+    color: #F948B2;
+    cursor: pointer;
+
+}
+
+.button-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 
@@ -388,4 +444,61 @@ nav {
     font-weight: 600;
     line-height: normal;
     margin-bottom: 40px;
+}
+
+.hide {
+    display: none;
+}
+
+
+@media screen and (max-width: 576px) {
+
+    /* navigation part  */
+
+    head {
+        
+    }
+
+    nav {
+        flex-direction: column;
+
+    }
+
+    .nav-2 {
+        flex-direction: column;
+
+    }
+
+    .div-2 ul {
+        flex-direction: column;
+    }
+
+    /* banner part  */
+
+    .banner {
+        flex-direction: column;
+        padding: 20px;
+
+    }
+
+    /* online games part  */
+    .online-games {
+        flex-direction: column;
+    }
+
+    .box-container {
+        flex-direction: column;
+    }
+
+    /* play part  */
+
+    .play{
+        flex-direction: column;
+        padding: 5px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* footer part  */
+    
 }
