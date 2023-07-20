@@ -448,7 +448,7 @@ nav {
 @media screen and (max-width: 576px) {
 
     * {
-        max-width: 124%;
+        max-width: 130%;
     }
 
     /* navigation part  */
@@ -529,8 +529,23 @@ nav {
     }
 
     .play-img {
-        width: 123%;
+        width: 130%;
+        height: 450px;
+        width: auto;
+        padding: 80px;
+    }
+
+    .play .img-1{
+        width: 450px;
         height: 500px;
+    }
+
+    .play .img-2{
+        width: 200px;
+        height: 240px;
+        position: relative;
+        margin-left: 325px;
+        margin-top: 50px;
     }
 
     .play-text {
@@ -557,7 +572,7 @@ nav {
     /* footer section */
 
     .footer {
-        width: 124%;
+        width: 130%;
     }
 
     .footer-text ul {
